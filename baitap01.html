@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1: Carousel - Nguyễn Minh Hiếu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Nguyễn Minh Hiếu</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="baitap01.html" class="active">Bài tập 1</a></li>
+                    <li><a href="baitap02.html">Bài tập 2</a></li>
+                    <li><a href="baitap03.html">Bài tập 3</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel-section">
+            <div class="container">
+                <h1>Carousel hình ảnh</h1>
+                
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-slide active">
+                            <img src="https://picsum.photos/800/500?random=1" alt="Slide 1">
+                            <div class="carousel-caption">Hình ảnh 1</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/500?random=2" alt="Slide 2">
+                            <div class="carousel-caption">Hình ảnh 2</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/500?random=3" alt="Slide 3">
+                            <div class="carousel-caption">Hình ảnh 3</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/500?random=4" alt="Slide 4">
+                            <div class="carousel-caption">Hình ảnh 4</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/500?random=5" alt="Slide 5">
+                            <div class="carousel-caption">Hình ảnh 5</div>
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="https://picsum.photos/800/500?random=6" alt="Slide 6">
+                            <div class="carousel-caption">Hình ảnh 6</div>
+                        </div>
+
+                        <button class="carousel-btn prev" onclick="carouselNavigate(-1)">
+                            <span>&#10094;</span>
+                        </button>
+                        <button class="carousel-btn next" onclick="carouselNavigate(1)">
+                            <span>&#10095;</span>
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="goToSlide(0)"></span>
+                        <span class="indicator" onclick="goToSlide(1)"></span>
+                        <span class="indicator" onclick="goToSlide(2)"></span>
+                        <span class="indicator" onclick="goToSlide(3)"></span>
+                        <span class="indicator" onclick="goToSlide(4)"></span>
+                        <span class="indicator" onclick="goToSlide(5)"></span>
+                    </div>
+                </div>              
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 231A010446 - Nguyễn Minh Hiếu.</p>
+			<p>nguyenminhhieu100520@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

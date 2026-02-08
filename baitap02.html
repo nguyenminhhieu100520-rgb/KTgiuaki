@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2: Todo List - Nguyễn Minh Hiếu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Nguyễn Minh Hiếu</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="baitap01.html">Bài tập 1</a></li>
+                    <li><a href="baitap02.html" class="active">Bài tập 2</a></li>
+                    <li><a href="baitap03.html">Bài tập 3</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="todo-section">
+            <div class="container">
+                <h1>Danh sách công việc (Todo List)</h1>
+                
+                <div class="todo-container">
+                    <div class="todo-input-section">
+                        <h2>Thêm công việc mới</h2>
+                        <form id="todoForm">
+                            <input 
+                                type="text" 
+                                id="todoInput" 
+                                placeholder="Nhập công việc cần làm..." 
+                                required
+                            >
+                            <button type="submit" class="btn btn-add">Thêm công việc</button>
+                        </form>
+                    </div>
+
+                    <div class="todo-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="totalTodos">0</span>
+                            <span class="stat-label">Tổng số</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="completedTodos">0</span>
+                            <span class="stat-label">Đã hoàn thành</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" id="pendingTodos">0</span>
+                            <span class="stat-label">Đang làm</span>
+                        </div>
+                    </div>
+
+                    <div class="todo-list-section">
+                        <h2>Danh sách công việc</h2>
+                        <div id="todoList" class="todo-list"></div>
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 231A010446 - Nguyễn Minh Hiếu.</p>
+			<p>nguyenminhhieu100520@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

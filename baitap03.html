@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3: Game đoán số - Nguyễn Minh Hiếu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Nguyễn Minh Hiếu</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="baitap01.html">Bài tập 1</a></li>
+                    <li><a href="baitap02.html">Bài tập 2</a></li>
+                    <li><a href="baitap03.html" class="active">Bài tập 3</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="game-section">
+            <div class="container">
+                <h1>Game đoán số (1-100)</h1>
+                
+                <div class="game-container">
+                    <div class="game-board">
+                        <div class="game-info">
+                            <h2>Đoán số bí mật!</h2>
+                            <p>Tôi đã nghĩ ra một số từ 1 đến 100. Bạn có thể đoán được không?</p>
+                        </div>
+
+                        <div class="game-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">Số lần thử:</span>
+                                <span class="stat-value" id="attemptCount">0</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Kỷ lục:</span>
+                                <span class="stat-value" id="bestScore">--</span>
+                            </div>
+                        </div>
+
+                        <div class="game-input">
+                            <input 
+                                type="number" 
+                                id="guessInput" 
+                                placeholder="Nhập số từ 1-100" 
+                                min="1" 
+                                max="100"
+                            >
+                            <button id="guessBtn" class="btn btn-primary">Đoán</button>
+                            <button id="resetBtn" class="btn btn-secondary">Chơi lại</button>
+                        </div>
+
+                        <div id="feedback" class="feedback"></div>
+
+                        <div id="guessHistory" class="guess-history">
+                            <h3>Lịch sử đoán:</h3>
+                            <div id="historyList" class="history-list"></div>
+                        </div>
+                    </div>
+
+                    <!-- Fireworks container -->
+                    <div id="fireworks" class="fireworks-container"></div>
+                </div>               
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 231A010446 - Nguyễn Minh Hiếu.</p>
+			<p>nguyenminhhieu100520@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

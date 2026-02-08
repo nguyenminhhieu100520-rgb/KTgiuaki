@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ - Nguyễn Minh Hiếu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Nguyễn Minh Hiếu</div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="baitap01.html">Bài tập 1</a></li>
+                    <li><a href="baitap02.html">Bài tập 2</a></li>
+                    <li><a href="baitap03.html">Bài tập 3</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="contact.html" class="active">Liên hệ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1>Liên hệ</h1>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Thông tin liên hệ</h2>
+                        <div class="info-item">
+                            <strong>Email:</strong>
+                            <span>nnguyenminhhieu100520@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Điện thoại:</strong>
+                            <span>0344770422</span>
+                        </div>
+                        <div class="info-item">
+                            <strong>Địa chỉ:</strong>
+                            <span>hẻm 97 Hồng Lạc, phường Bảy Hiền,Tp Hồ Chí Minh, Việt Nam</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <h2>Gửi tin nhắn</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Họ và tên</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Chủ đề</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Tin nhắn</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Gửi tin nhắn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 231A010446 - Nguyễn Minh Hiếu.</p>
+			<p>nguyenminhhieu100520@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
